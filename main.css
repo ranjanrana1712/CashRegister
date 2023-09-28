@@ -1,0 +1,93 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    width: 50%;
+    /* border: 5px solid; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+      
+
+}
+
+.description {
+    margin-bottom: 50px;
+
+}
+
+#bill-amount {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid;
+
+}
+
+#cash-given {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid;
+
+}
+button {
+    font-size: larger;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    width: 120px;
+    background-color: yellow;
+    transform: translateX(270%);
+    
+}
+.change-table {
+    margin-top: 40px;
+
+    text-align: justify;
+
+
+    
+
+}
+.no-Notes {
+    margin-top: 70px;
+    
+
+}
+.given-Notes {
+
+    padding: 10px;
+    
+
+}
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+}
+input {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+td {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+#error-message {
+    font-weight: bold;
+    font-size: 20px;
+
+}

@@ -9,8 +9,52 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="heading"></h1>
-        p.
+        <h1 class="heading">Cash Register Manager</h1>
+        <p class="description">
+            Enter the bill amount and cash given by customer and know minimum of notes to return.
+        </p>
+        <!-- This association tells browsers and assistive technologies that the label "bill-amount" is associated with the input field. When a user clicks on the label, it focuses the input field for data entry -->
+        <label for="bill-amount">Bill Amount</label>
+        <input id="bill-amount"  type="text">
+
+        <label for="cash-given">Cash Given</label>
+        <input id="cash-given"type="text">
+
+        <button id="check-button">Check</button>
+
+        <p id="error-message"></p>
+
+        <table class="change-table">
+            <caption>
+                Return change
+            </caption>
+            <tr>
+                <th class="no-Notes">No of Notes</th>
+
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+
+            </tr>
+
+
+            <tr>
+                <th class="given-Notes">Notes</th>
+
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+            
+        </table>
 
 
     </div>
