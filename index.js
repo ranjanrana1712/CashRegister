@@ -3,8 +3,6 @@ const cashGiven = document.querySelector("#cash-given");
 const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
-const billAmountValue = parseFloat(billAmount.value);
-const cashGivenValue = parseFloat(cashGiven.value);
 
 // to check if your button are working
 // checkButton.addEventListener("click", ()=> console.log("clicked"));
@@ -18,57 +16,32 @@ const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
+    const billAmountNew = parseFloat(billAmount.value);
+    const cashGivenNew = parseFloat(cashGiven.value);
     hideMessage();
-
-    if (billAmount.Value <= 0){
-        showMessage("Enter valid number");
-
-    }
-    else if (billAmount.Value === cashGiven.Value){
-        showMessage("return no change");
-
-    }
-    else if (cashGiven.Value <= billAmount.Value){
-        showMessage("You can wash plate");
-
-    }
-
-    else {
-        const amountToBeReturned = cashGiven.value - billAmount.value;
-                 calculateChange(amountToBeReturned);
-
-    }
-
-
-
-    // if (cashGiven.value === billAmount.value) {
-    //     showMessage("Give no Change to customer");
-
-    // }
     
-    // if(billAmount.value  > 0) {
-        
+    if(billAmountNew.valueOf()  > 0) {
 
-        
+        if (cashGivenNew.valueOf() >= billAmountNew.valueOf()) {
 
-    //     if (cashGiven.value > billAmount.value) {
             
 
-    //         const amountToBeReturned = cashGiven.value - billAmount.value;
-    //         calculateChange(amountToBeReturned);
+            const amountToBeReturned = cashGivenNew.valueOf() - billAmountNew.valueOf();
+            calculateChange(amountToBeReturned);
             
             
-    //     } else {
-    //         showMessage("Do you wanna wash plates?");
+        } else {
+            showMessage("Do you wanna wash plates?");
             
-    //     }
+        }
         
 
-    // } else {
+    } else {
         
-    //     showMessage("Invalid Bill Amount");
-    // }
-});
+        showMessage("Invalid Bill Amount");
+    }
+}
+);
 
 function calculateChange(amountToBeReturned) {
 
