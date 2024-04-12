@@ -4,13 +4,6 @@ const checkButton = document.querySelector("#check-button");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 
-// to check if your button are working
-// checkButton.addEventListener("click", ()=> console.log("clicked"));
-
-// checkButton.addEventListener("click", function(){
-//     console.log(billAmount.value);
-// });
-
 
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
